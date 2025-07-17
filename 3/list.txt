@@ -1,0 +1,60 @@
+1. append() – добавляет элемент в конец списка
+python
+numbers = [1, 2, 3]
+numbers.append(4)
+print(numbers)  # [1, 2, 3, 4]
+2. extend() – расширяет список другим списком
+python
+list1 = [1, 2, 3]
+list2 = [4, 5]
+list1.extend(list2)
+print(list1)  # [1, 2, 3, 4, 5]
+3. insert() – вставляет элемент по указанному индексу
+python
+fruits = ['apple', 'banana', 'cherry']
+fruits.insert(1, 'orange')
+print(fruits)  # ['apple', 'orange', 'banana', 'cherry']
+4. index() – возвращает индекс первого вхождения элемента
+python
+letters = ['a', 'b', 'c', 'a']
+print(letters.index('a'))  # 0
+5. remove() – удаляет первый найденный элемент
+python
+nums = [1, 2, 3, 2]
+nums.remove(2)
+print(nums)  # [1, 3, 2]
+6. pop() – удаляет элемент по индексу и возвращает его
+python
+items = ['a', 'b', 'c']
+popped_item = items.pop(1)
+print(popped_item)  # 'b'
+print(items)  # ['a', 'c']
+7. count() – считает количество вхождений элемента
+python
+data = [1, 2, 2, 3, 2]
+print(data.count(2))  # 3
+8. reverse() – разворачивает список
+python
+numbers = [1, 2, 3]
+numbers.reverse()
+print(numbers)  # [3, 2, 1]
+9. copy() – создает копию списка
+python
+original = [1, 2, 3]
+copied = original.copy()
+copied.append(4)
+print(original)  # [1, 2, 3]
+print(copied)    # [1, 2, 3, 4]
+10. clear() – очищает список
+python
+elements = [1, 2, 3]
+elements.clear()
+print(elements)  # []
+11. del – удаляет элемент по индексу или срез
+python
+my_list = [10, 20, 30, 40]
+del my_list[1]  # Удаляем элемент с индексом 1
+print(my_list)  # [10, 30, 40]
+
+del my_list[0:2]  # Удаляем срез
+print(my_list)  # [40]
